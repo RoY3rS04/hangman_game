@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Hangman</title>
+    </head>
+    <body>
+        <div class="max-wrapper">
+            <h1 class="title">Hangman</h1>
+            <div class="wrapper">
+                <div class="app">
+                    <div class="hint"></div>
+                    <div class="letters"></div>
+                    <div class="message"></div>
+                </div>
+                <div class="dead">
+                    <div class="stick">
+                        <div class="rope dying"></div>
+                        <div class="head dying">
+                            <div class="eyes hide">
+                                <span>x</span><span>x</span>
+                            </div>
+                            <div class="mouth hide"></div>
+                        </div>
+                        <div class="body dying"></div>
+                        <div class="left-arm dying"></div>
+                        <div class="right-arm dying"></div>
+                        <div class="left-leg dying"></div>
+                        <div class="right-leg dying"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button restart">Restart</button>
+                <button class="button word">Another Word</button>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
